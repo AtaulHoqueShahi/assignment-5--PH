@@ -1,13 +1,20 @@
-import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero"
+import Hero from "./components/Hero";
+import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
-   <Navbar/>
-   <Hero/>
-   <Footer/>
+      <Navbar />
+      <Hero />
+      <Technologies />
+   
+      <Footer />
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }

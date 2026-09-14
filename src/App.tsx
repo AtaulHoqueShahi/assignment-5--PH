@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Technologies />
-   
+
       <Footer />
       <ToastContainer position="top-right" autoClose={2000} />
     </>

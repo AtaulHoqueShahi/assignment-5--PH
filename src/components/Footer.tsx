@@ -1,23 +1,16 @@
-
 import FooterLogo from "../assets/logo-text.png";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-
-         
           <div>
-            <img
-              src={FooterLogo}
-              alt="logo"
-              className="h-8 mb-5"
-            />
+            <img src={FooterLogo} alt="logo" className="h-8 mb-5" />
 
             <p className="text-gray-500 text-sm leading-relaxed mb-5 max-w-xs">
-              Curated tools, technologies, and resources for developers building modern software.
+              Curated tools, technologies, and resources for developers building
+              modern software.
             </p>
 
             <div className="flex items-center gap-5 text-sm text-gray-500">
@@ -33,7 +26,6 @@ const Footer = () => {
             </div>
           </div>
 
-         
           <div>
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider mb-4">
               PRODUCT
@@ -46,7 +38,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#technologies" className="hover:text-pink-500 transition">
+                <a
+                  href="#technologies"
+                  className="hover:text-pink-500 transition"
+                >
                   Technologies
                 </a>
               </li>
@@ -58,7 +53,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          
           <div>
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider mb-4">
               COMPANY
@@ -83,7 +77,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          
           <div>
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider mb-4">
               LEGAL
@@ -102,7 +95,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
         </div>
 
         <div className="border-t border-gray-200 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
@@ -119,7 +111,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
       </div>
     </footer>
   );

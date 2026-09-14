@@ -339,6 +339,6 @@ This project was created for educational purposes as part of the Programming Her
 
 ```
 
-**একটা গুরুত্বপূর্ণ কথা:** README-তে এখন `Live Demo`, GitHub repository এবং কিছু links placeholder আছে। এগুলো তোর actual link দিয়ে replace করবি। আর assignment-এ যদি **শুধু 3টা feature** চাওয়া হয়, উপরের Features-এর প্রথম 3টাই যথেষ্ট।
+
 ```
 

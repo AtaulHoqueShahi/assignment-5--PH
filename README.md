@@ -342,3 +342,152 @@ This project was created for educational purposes as part of the Programming Her
 
 ```
 
+# Dev Stack Builder
+
+Dev Stack Builder is a responsive React and TypeScript web application that helps developers explore different technologies and build their own development stack.
+
+Users can browse technologies by category, view their details, and add technologies to their personal stack. The application also prevents duplicate technologies and multiple selections from the same category.
+
+## Live Demo
+
+Add your live website link here:
+
+https://heroic-lamington-c53031.netlify.app
+
+## GitHub Repository
+
+Add your GitHub repository link here:
+
+https://github.com/AtaulHoqueShahi/assignment-5--PH.git
+
+---
+
+## Features
+
+### 1. Explore Technologies
+
+Users can explore different development technologies including:
+
+- React
+- Vue.js
+- Svelte
+- Next.js
+- Node.js
+- PostgreSQL
+- Redis
+- JavaScript
+- TypeScript
+- Java
+- Tailwind CSS
+- Docker
+
+Each technology card displays:
+
+- Technology icon
+- Technology name
+- Category
+- Description
+- Difficulty level
+- Rating
+- Badge
+
+The technology data is loaded dynamically from a JSON file.
+
+### 2. Build Your Own Stack
+
+Users can add technologies to their personal stack by clicking the **Add to Stack** button.
+
+The application also provides:
+
+- Selected technology count
+- Selected technology list
+- Remove individual technology
+- Remove all technologies
+- Duplicate technology prevention
+- Category-based selection restriction
+
+Toast notifications are used to provide feedback when technologies are added, removed, or when an invalid selection is attempted.
+
+### 3. Fully Responsive Design
+
+The website is designed to work across different screen sizes.
+
+It includes:
+
+- Responsive desktop layout
+- Tablet-friendly layout
+- Mobile navigation
+- Responsive technology cards
+- Mobile-friendly stack section
+- Responsive hero and footer
+
+The UI is built using Tailwind CSS with a consistent orange, pink, and violet gradient theme.
+
+---
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Toastify
+- HTML5
+- JavaScript
+- JSON
+
+---
+
+## React Concepts Used
+
+### Components
+
+The application is divided into reusable components such as:
+
+- `Navbar`
+- `Hero`
+- `Technologies`
+- `TechnologyCard`
+- `YourStack`
+- `Footer`
+
+Breaking the application into components makes the code easier to maintain and reuse.
+
+### Props
+
+Props are used to pass data and functions from parent components to child components.
+
+For example, `TechnologyCard` receives:
+
+- Technology information
+- Selected state
+- Function for adding a technology
+
+This allows the card component to remain reusable.
+
+### State
+
+React `useState` is used to manage dynamic data such as:
+
+- Technology list
+- Selected stack
+- Loading state
+- Mobile menu state
+
+Whenever the state changes, React updates the UI automatically.
+
+### useEffect
+
+`useEffect` is used to load the technology data from the JSON file when the application starts.
+
+Example:
+
+```tsx
+useEffect(() => {
+  fetch("/technologies.json")
+    .then((res) => res.json())
+    .then((data) => {
+      setTechnologies(data);
+      setLoading(false);
+    });
+}, []);

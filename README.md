@@ -9,7 +9,7 @@ Users can browse technologies by category, view their details, and add technolog
 
 Add your live website link here:
 
-https://your-live-link.com
+https://heroic-lamington-c53031.netlify.app
 
 ## GitHub Repository
 

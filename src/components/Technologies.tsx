@@ -83,7 +83,6 @@ const Technologies = () => {
           </p>
         </div>
 
-        {/* Loading */}
         {loading ? (
           <div className="text-center py-20 text-gray-500 text-lg">
             Loading technologies...
@@ -91,7 +90,6 @@ const Technologies = () => {
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-            {/* Technology Cards */}
             <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
               {technologies.map((tech) => (
                 <TechnologyCard
@@ -105,7 +103,7 @@ const Technologies = () => {
               ))}
             </div>
 
-            {/* Your Stack */}
+          
             <div className="lg:col-span-1">
               <YourStack
                 stack={stack}

@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="home" className="bg-white pt-20">
       <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 flex flex-col lg:flex-row items-center justify-between gap-12">
         
-        {/* Hero Content */}
+     
         <div className="flex-1 max-w-xl">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
             Build Your Ideal{" "}
@@ -20,7 +20,7 @@ const Hero = () => {
             project.
           </p>
 
-          {/* Buttons */}
+          
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#technologies"
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Hero Image */}
+        
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
             src={Banner}

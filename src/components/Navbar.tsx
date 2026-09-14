@@ -12,15 +12,15 @@ const Navbar = () => {
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
         
-        {/* Desktop Navbar */}
+       
         <div className="hidden md:flex items-center justify-between">
           
-          {/* Logo */}
+          
           <a href="#" className="flex items-center">
             <img src={Logo} alt="Dev Stack" className="h-8" />
           </a>
 
-          {/* Nav Links */}
+          
           <ul className="flex items-center gap-8">
             <li>
               <a
@@ -68,7 +68,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Auth Buttons */}
+         
           <div className="flex items-center gap-5">
             <a
               href="#"
@@ -83,10 +83,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navbar */}
+       
         <div className="md:hidden flex items-center justify-between">
           
-          {/* Hamburger */}
+         
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-700 text-2xl w-10 h-10 flex items-center justify-center"
@@ -95,7 +95,7 @@ const Navbar = () => {
             {isMenuOpen ? "✕" : "☰"}
           </button>
 
-          {/* Center Logo */}
+          
           <a href="#" onClick={closeMenu}>
             <img
               src={Logo}
@@ -104,7 +104,7 @@ const Navbar = () => {
             />
           </a>
 
-          {/* Mobile Auth Buttons */}
+         
           <div className="flex items-center gap-2">
             <a
               href="#"
@@ -119,7 +119,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        
         {isMenuOpen && (
           <div className="md:hidden mt-4 border-t border-gray-100 pt-4">
             <ul className="flex flex-col gap-4">
